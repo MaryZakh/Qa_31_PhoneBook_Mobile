@@ -19,11 +19,13 @@ public class AuthenticationScreen extends BaseScreen {
     AndroidElement loginBtn;
 
     public AuthenticationScreen fillEmail(String email) {
+        //pause(4000)
+        should(emailEditText,10);
         type(emailEditText, email);
         return this;
     }
 
-    public AuthenticationScreen fillPassword(String password) {
+        public AuthenticationScreen fillPassword(String password) {
         type(passwordEditText, password);
         return this;
     }
