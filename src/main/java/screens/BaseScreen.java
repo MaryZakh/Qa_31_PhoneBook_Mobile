@@ -23,7 +23,7 @@ public class BaseScreen {
         if (text != null) {
             element.sendKeys(text);
         }
-
+        driver.hideKeyboard();
     }
 
     public boolean isShouldHave(AndroidElement element, String text, int time) {
@@ -31,8 +31,8 @@ public class BaseScreen {
                 .until(ExpectedConditions.textToBePresentInElement(element, text));
     }
 
-    public void should(AndroidElement element, int time){
-        new WebDriverWait(driver,time).until(ExpectedConditions.visibilityOf(element));
+    public void should(AndroidElement element, int time) {
+        new WebDriverWait(driver, time).until(ExpectedConditions.visibilityOf(element));
     }
 
 
