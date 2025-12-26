@@ -20,7 +20,7 @@ public class AddNewContactTests extends AppiumConfig {
                 .fillLoginRegistrationForm(Auth.builder().email("margo@gmail.com")
                         .password("Mmar123456$").build())
                 .submitLogin();
-                //.isActivityTitleDisplayed("Contact List");
+        //.isActivityTitleDisplayed("Contact List");
     }
 
     @Test
@@ -39,12 +39,41 @@ public class AddNewContactTests extends AppiumConfig {
                 .openContactForm()
                 .fillContactForm(contact)
                 .submitContactForm()
-                .isContactAddedByName(contact.getName(),contact.getLastName());
+                .isContactAddedByName(contact.getName(), contact.getLastName());
     }
 
     @Test
     public void createNewContactSuccessReq() {
+        int i = new Random().nextInt(1000) + 1000;
 
+        Contact contact = Contact.builder()
+                .name("Simon")
+                .lastName("Wow" + i)
+                .email("wow" + i + "@gmail.com")
+                .phone("6789456" + i)
+                .address("Haifa")
+                .build();
+        new ContactListScreen(driver)
+                .openContactForm()
+                .fillContactForm(contact)
+                .submitContactForm()
+                .isContactAddedByName(contact.getName(), contact.getLastName());
+    }
+
+    @Test
+    public void CreateContactWithEmptyName() {
+        Contact contact = Contact.builder()
+                .lastName("Wow")
+                .email("wow@gmail.com")
+                .phone("678945645956")
+                .address("Haifa")
+                .description("The best friend")
+                .build();
+        new ContactListScreen(driver)
+                .openContactForm()
+                .fillContactForm(contact)
+                .submitContactFormNegative()
+                .isErrorMessageHasText("{name=must not be blank}");
     }
 
 
