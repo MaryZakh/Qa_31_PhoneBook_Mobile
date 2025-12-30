@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c91a7b-facb-47e2-b4ea-57161e645111" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DeleteContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteContactTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +94,7 @@
     "Gradle.AddNewContactTests.CreateContactWithEmptyName.executor": "Run",
     "Gradle.AddNewContactTests.createNewContactSuccess.executor": "Run",
     "Gradle.AddNewContactTests.executor": "Run",
+    "Gradle.DeleteContactTests.deleteFirstContact.executor": "Run",
     "Gradle.LaunchTest.launch.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.LoginTests.loginSuccess.executor": "Run",
