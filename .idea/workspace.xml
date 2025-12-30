@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c91a7b-facb-47e2-b4ea-57161e645111" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DeleteContactTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +101,7 @@
     "Gradle.LoginTests.loginWrongEmail.executor": "Run",
     "Gradle.LoginTestsSecond.executor": "Run",
     "Gradle.LoginTestsSecond.loginSuccess.executor": "Run",
+    "Gradle.RegistrationTests.executor": "Run",
     "Gradle.RegistrationTests.registrationSuccess.executor": "Run",
     "Gradle.RegistrationTests.registrationUserAlreadyExists.executor": "Run",
     "Gradle.RegistrationTests.registrationWrongEmail.executor": "Run",
@@ -119,7 +121,31 @@
       <recent name="D:\Qa_31\Qa_31_PhoneBook_Mobile\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTests">
+  <component name="RunManager" selected="Gradle.DeleteContactTests.deleteFirstContact">
+    <configuration name="DeleteContactTests.deleteFirstContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.DeleteContactTests.deleteFirstContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="RegistrationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,30 +160,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.RegistrationTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegistrationTests.registrationSuccess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.RegistrationTests.registrationSuccess&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -242,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DeleteContactTests.deleteFirstContact" />
         <item itemvalue="Gradle.RegistrationTests" />
         <item itemvalue="Gradle.RegistrationTests.registrationWrongPassword" />
         <item itemvalue="Gradle.RegistrationTests.registrationUserAlreadyExists" />
         <item itemvalue="Gradle.RegistrationTests.registrationWrongEmail" />
-        <item itemvalue="Gradle.RegistrationTests.registrationSuccess" />
       </list>
     </recent_temporary>
   </component>
